@@ -16,7 +16,7 @@ A simple and responsive **Weather App** that allows users to check the current w
 ## How to Run Locally? 🏃‍♂️
 1. Clone the repository:  
    ```sh
-   git clone https://github.com/your-username/weather-app.git
+   git clone https://github.com/your-username/Project-Weather.git
    ```
 2. Navigate to the project directory:  
    ```sh
@@ -32,7 +32,8 @@ const apiKey = "YOUR_API_KEY";  // Replace with your OpenWeather API key
 
 
 ## Screenshots 📸
-_Add screenshots of your project here to showcase the UI._
+![image](https://github.com/user-attachments/assets/94ee8eba-875e-4c30-813d-d11443859ab4)
+
 
 ## License 📜
 This project is open-source and available under the [MIT License](LICENSE).
