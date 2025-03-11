@@ -3,7 +3,7 @@ body{
     background-color: black;
     margin: 0;
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
     align-items: center;
     color: white;
 }
@@ -34,13 +34,11 @@ button[type = "submit"]:hover{
     background-color: lightgray;
 }
 
-
 .card{
     background: linear-gradient(180deg, grey, lightgray);
     padding: 20px;
     border-radius: 10px;
     min-width: 467px;
-    /* min-height: 500px */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,6 +48,7 @@ button[type = "submit"]:hover{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 10px;
     width: 100%;
     height: 80px;
 }
@@ -57,7 +56,7 @@ button[type = "submit"]:hover{
 .cityDisplay, .tempDisplay{
     font-size: 3rem;
     font-weight: bold;
-    color: black
+    color: black;
 }
 
 .desc{
@@ -110,28 +109,108 @@ img {
     margin-top: 10px;
 }
 
-@media only screen and (max-width: 620px) {
+/* Medium devices (tablets) */
+@media only screen and (max-width: 768px) {
     .weatherForm {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100%;
+        width: 90%;
     }
 
     .cityInput {
-        width: 80%; 
-        font-size: 1.5rem; 
-        margin-bottom: 10px; 
+        width: 90%;
+        font-size: 1.6rem;
+        margin-bottom: 12px;
     }
 
     button[type="submit"] {
-        width: 50%;
-        font-size: 1.5rem; 
-        padding: 10px;
+        width: 60%;
+        font-size: 1.6rem;
     }
 
     .card {
-        width: 80%; 
+        min-width: unset;
+        width: 90%;
         padding: 15px;
+    }
+
+    .cityDisplay, .tempDisplay {
+        font-size: 2.5rem;
+    }
+
+    .img-container {
+        height: 350px;
+    }
+}
+
+/* Small devices (phones) */
+@media only screen and (max-width: 480px) {
+    .weatherForm {
+        width: 95%;
+    }
+
+    .cityInput {
+        width: 95%;
+        font-size: 1.3rem;
+        padding: 8px;
+    }
+
+    button[type="submit"] {
+        width: 70%;
+        font-size: 1.3rem;
+        padding: 8px;
+    }
+
+    .card {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .cityDisplay, .tempDisplay {
+        font-size: 1.8rem;
+    }
+
+    .descDisplay {
+        font-size: 1.5rem;
+    }
+
+    .img-container {
+        height: 250px;
+    }
+
+    .humidityDisplay, .windSpeedDisplay {
+        font-size: 1.2rem;
+    }
+}
+
+/* Extra small devices */
+@media only screen and (max-width: 320px) {
+    .cityInput {
+        font-size: 1.1rem;
+    }
+
+    button[type="submit"] {
+        font-size: 1.1rem;
+    }
+
+    .cityAndTemp {
+        gap: 5px;
+    }
+
+    .cityDisplay, .tempDisplay {
+        font-size: 1.5rem;
+    }
+
+    .descDisplay {
+        font-size: 1.2rem;
+    }
+
+    .img-container {
+        height: 200px;
+    }
+
+    .humidityDisplay, .windSpeedDisplay {
+        font-size: 0.9rem;
     }
 }
